@@ -1,19 +1,24 @@
 <html>
     <head>
         <title>WebGuiRobot Controller</title>
-        <script src="/socket.io/socket.io.js"></script>
+        <!--script src="/server-websocket/js/socket.io.js"></script-->
+        <!--This is templated resource directory, ai says it's jinja2. Apparently this can allow flexibility in resource location.
+        Since this is what the original project did, we'll use it instead of static references. Maybe I can learn something
+        about it.-->
+        <script src="{{ url_for('static', filename='js/socket.io.js') }}"></script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     </head>
     <body>
-        <div id="joystick1" class="joystick_zone"></div>
+        <div id="joystick_left" class="joystick_zone"></div>
 
         <div class="middlezone">
             <h1>Hello World!</h1>
             <script>
                 const socket = io();
-                
+
             </script>
         </div>
 
-        <div id="joystick2" class="joystick_zone"></div>
+        <div id="joystick_right" class="joystick_zone"></div>
     </body>
 </html>
