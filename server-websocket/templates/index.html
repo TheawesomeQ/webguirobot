@@ -6,6 +6,7 @@
         Since this is what the original project did, we'll use it instead of static references. Maybe I can learn something
         about it.-->
         <script src="{{ url_for('static', filename='js/socket.io.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/joy.js')}}"></script>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     </head>
     <body>
@@ -19,6 +20,9 @@
             </script>
         </div>
 
-        <div id="joystick_right" class="joystick_zone"></div>
+        <div id="joystick_right" class="joystick_zone">
+
+        </div>
     </body>
+    <script src="{{ url_for('static', filename='js/controls.js') }}"></script>
 </html>
