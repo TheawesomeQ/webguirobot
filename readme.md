@@ -23,3 +23,8 @@ The goal of this project is to run a webserver on a Raspberry Pi (3+) on a self-
 * Flask web server https://flask.palletsprojects.com/ and learning resource https://www.geeksforgeeks.org/python/flask-tutorial/
 * Flask-socketio https://flask-socketio.readthedocs.io/en/latest/
 
+
+Project notes
+Installation of i2c tools
+- i2c-tools package for investigating i2c connection and addresses, and diagnosing issues
+- Use raspi-config to enable to i2c interface
